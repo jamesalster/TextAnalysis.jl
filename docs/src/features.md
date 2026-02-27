@@ -10,7 +10,7 @@ update_lexicon!(crps)
 m = DocumentTermMatrix(crps)
 ```
 
-A `DocumentTermMatrix` object is a special type. If you want to use a simple sparse matrix, call `dtm()` on this object:
+A `DocumentTermMatrix` object is a special type. Terms are sorted alphabetically, and are available in the *terms* field (`m.terms`). If you want to use a simple sparse matrix, call `dtm()` on this object:
 
 ```julia
 julia> dtm(m)
